@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="TestNG.Testscript">
+        <methods>
+          <include name="clickOnBooks"/>
+          <include name="closebrowser"/>
+          <include name="login"/>
+          <include name="closeObject"/>
+          <include name="fetchData"/>
+          <include name="launchbrowser"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- TestNG.Testscript -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="Browser" value="edge"/>
+    <classes>
+      <class name="TestNG.Testscript">
+        <methods>
+          <include name="clickOnBooks"/>
+          <include name="closebrowser"/>
+          <include name="closeObject"/>
+          <include name="login"/>
+          <include name="fetchData"/>
+          <include name="launchbrowser"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- TestNG.Testscript -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" name="Test3(failed)">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="TestNG.Testscript">
+        <methods>
+          <include name="clickOnBooks"/>
+          <include name="login"/>
+          <include name="closeObject"/>
+          <include name="closebrowser"/>
+          <include name="fetchData"/>
+          <include name="launchbrowser"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- TestNG.Testscript -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [Suite] -->
